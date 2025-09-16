@@ -9,22 +9,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 1. Checkout repo
       - uses: actions/checkout@v4
 
-      - name: Clean old Jekyll cache
-        run: rm -rf .jekyll-cache
+      # 2. Setup Ruby + Bundler
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1
+          bundler-cache: true
 
-      - name: Fix permissions
-        run: chmod -R 777 ${{ github.workspace }}
+      # 3. Install dependencies
+      - run: bundle install
 
-      - name: Build site in Docker
-        run: |
-          docker run --user $(id -u):$(id -g) -v ${{ github.workspace }}:/srv/jekyll jekyll/builder:latest \
-          jekyll build --future --destination /srv/jekyll/_site
+      # 4. Build the site
+      - run: bundle exec jekyll build --destination _site
 
-      - name: List _site contents
-        run: ls -la _site
-
+      # 5. Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
