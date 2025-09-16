@@ -221,7 +221,7 @@ body {
 
 .about-grid {
     display: grid;
-    grid-template-columns: 2fr;
+    // grid-template-columns: 2fr;
     gap: 2rem;
     align-items: start;
 }
@@ -252,6 +252,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
+    width: 25%;
 }
 
 .skill-category {
@@ -261,7 +262,6 @@ body {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
     border: 1px solid #f3f4f6;
     transition: transform 0.15s ease;
-    width: 25%;
 }
 
 .skill-category:hover {
