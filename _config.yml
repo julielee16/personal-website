@@ -1,3 +1,6 @@
 title: Theme
 description: A site built with a custom Jekyll theme.
 theme: null
+
+include:
+  - default.html
