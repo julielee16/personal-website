@@ -4,3 +4,8 @@ theme: null
 
 include:
   - default.html
+
+sass:
+  style: compressed
+  load_paths:
+    - _styles

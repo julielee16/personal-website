@@ -4,18 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juhoon Lee</title>
-    <!-- include all sass in styles folder -->
-    {% assign styles = site.pages
-    | where_exp: "file", "file.url contains '/_styles'"
-    %}
-    {% for style in styles %}
-    {% unless style.url contains ".map" %}
-        <link
-        href="{{ style.path | replace: '.scss', '.css' | relative_url }}"
-        rel="stylesheet"
-        />
-    {% endunless %}
-    {% endfor %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
     <!-- Header -->
