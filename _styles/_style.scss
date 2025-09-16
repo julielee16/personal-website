@@ -1,5 +1,3 @@
----
----
 * {
     margin: 0;
     padding: 0;
@@ -36,7 +34,7 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #83a762, #ede5ab);
+    background: linear-gradient(135deg, #84cc16, #f97316);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,7 +107,7 @@ body {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #83a762, #ede5ab);
+    background: linear-gradient(135deg, #84cc16, #f97316);
     transition: left 0.3s ease;
     z-index: -1;
 }
@@ -167,14 +165,14 @@ body {
     left: 50%;
     width: 0;
     height: 1px;
-    background: #83a762;
+    background: #84cc16;
     transition: all 0.15s ease;
     transform: translateX(-50%);
 }
 
 .nav-menu a:hover,
 .nav-menu a.active {
-    color: #83a762;
+    color: #84cc16;
 }
 
 .nav-menu a:hover:before,
@@ -212,19 +210,15 @@ body {
 .section-subtitle {
     font-size: 0.85rem;
     color: #6b7280;
+    max-width: 400px;
 }
 
 /* About Section */
-#about {
-    display: flex;
-}
-
 .about-grid {
     display: grid;
-    // grid-template-columns: 2fr;
+    grid-template-columns: 2fr 1fr;
     gap: 2rem;
     align-items: start;
-    width: 350px;
 }
 
 .bio-content {
@@ -236,7 +230,7 @@ body {
 }
 
 .bio-content h4 {
-    color: #83a762;
+    color: #84cc16;
     font-size: 1rem;
     margin-bottom: 1rem;
     font-weight: 500;
@@ -269,7 +263,7 @@ body {
 }
 
 .skill-category h4 {
-    color: #ede5ab;
+    color: #f97316;
     margin-bottom: 0.6rem;
     font-weight: 500;
     font-size: 0.85rem;
@@ -283,7 +277,7 @@ body {
 
 .skill-tag {
     background: #f9fafb;
-    color: #83a762;
+    color: #84cc16;
     padding: 0.3rem 0.7rem;
     border-radius: 12px;
     font-size: 0.75rem;
@@ -302,7 +296,7 @@ body {
     left: 50%;
     width: 0;
     height: 0;
-    background: radial-gradient(circle, #83a762, #ede5ab);
+    background: radial-gradient(circle, #84cc16, #f97316);
     transition: all 0.3s ease;
     transform: translate(-50%, -50%);
     border-radius: 50%;
@@ -411,7 +405,7 @@ body {
     left: 0;
     width: 3px;
     height: 100%;
-    background: linear-gradient(135deg, #83a762, #ede5ab);
+    background: linear-gradient(135deg, #84cc16, #f97316);
     border-radius: 8px 0 0 8px;
     transition: width 0.3s ease;
 }
@@ -429,7 +423,7 @@ body {
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
-    background: linear-gradient(135deg, #ede5ab, #83a762);
+    background: linear-gradient(135deg, #f97316, #84cc16);
     color: white;
     padding: 0.3rem 0.8rem;
     border-radius: 10px;
@@ -460,7 +454,7 @@ body {
 }
 
 .publication .venue {
-    color: #83a762;
+    color: #84cc16;
     font-weight: 500;
     margin-bottom: 0.6rem;
     font-size: 0.8rem;
@@ -481,7 +475,7 @@ body {
 
 .publication-links a {
     background: #f9fafb;
-    color: #83a762;
+    color: #84cc16;
     text-decoration: none;
     padding: 0.4rem 0.9rem;
     border-radius: 12px;
@@ -500,7 +494,7 @@ body {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: #83a762;
+    background: #84cc16;
     transition: left 0.3s ease;
     z-index: -1;
 }
@@ -538,7 +532,7 @@ body {
 
 .project-header {
     height: 80px;
-    background: linear-gradient(135deg, #83a762, #ede5ab);
+    background: linear-gradient(135deg, #84cc16, #f97316);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -570,7 +564,7 @@ body {
     background: #f9fafb;
     padding: 0.15rem 0.5rem;
     border-radius: 6px;
-    color: #ede5ab;
+    color: #f97316;
     font-weight: 400;
     border: 1px solid #f3f4f6;
 }
@@ -590,7 +584,7 @@ body {
 
 .tech-tag {
     background: #f9fafb;
-    color: #83a762;
+    color: #84cc16;
     padding: 0.15rem 0.5rem;
     border-radius: 6px;
     font-size: 0.7rem;
@@ -764,6 +758,6 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #83a762;
+    background: #84cc16;
     border-radius: 2px;
 }
