@@ -460,62 +460,181 @@ body{
     margin:0 0 .4rem; 
     font-size:1.05rem; 
     font-weight:700; 
-    color:var(--text) 
+    color:var(--text); 
 }
 
-.publication .authors{ font-size:.9rem; color:var(--muted); margin-bottom:.45rem; font-style:italic }
-.publication .venue{ font-size:.88rem; color:var(--accent); font-weight:600; margin-bottom:.6rem }
-.publication p{ color:var(--muted); font-size:.9rem; margin-bottom:.6rem }
+.publication .authors{ 
+    font-size:.9rem; 
+    color:var(--muted); 
+    margin-bottom:.45rem; 
+    font-style:italic; 
+}
+
+.publication .venue{ 
+    font-size:.88rem; 
+    color:var(--accent); 
+    font-weight:600; 
+    margin-bottom:.6rem; 
+}
+
+.publication p{ 
+    color:var(--muted); 
+    font-size:.9rem; 
+    margin-bottom:.6rem;
+}
 
 /* publication year badge */
 .publication-year{
-  position:absolute; right:1rem; top:1rem;
-  background:linear-gradient(135deg,var(--accent-2),var(--accent)); color:white;
-  padding:.28rem .6rem; border-radius:8px; font-size:.75rem; font-weight:700;
+  position:absolute; 
+  right:1rem; 
+  top:1rem;
+  background:linear-gradient(135deg,var(--accent-2),var(--accent)); 
+  color:white;
+  padding:.28rem .6rem; 
+  border-radius:8px; 
+  font-size:.75rem; 
+  font-weight:700;
   box-shadow:0 3px 10px rgba(0,0,0,0.08);
 }
 
 /* links row */
-.publication .publication-links{ display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.5rem }
-.publication .publication-links a{
-  padding:.35rem .7rem; border-radius:999px; background:var(--bg); border:1px solid var(--border); font-size:.82rem; color:var(--accent);
+.publication .publication-links{ 
+    display:flex; 
+    gap:.5rem; 
+    flex-wrap:wrap; 
+    margin-top:.5rem; 
 }
-.publication .publication-links a:hover{ background:linear-gradient(135deg,var(--accent),var(--accent-2)); color:white; border-color:transparent }
+
+.publication .publication-links a{
+  padding:.35rem .7rem; 
+  border-radius:999px; 
+  background:var(--bg); 
+  border:1px solid var(--border); 
+  font-size:.82rem; 
+  color:var(--accent);
+}
+
+.publication .publication-links a:hover{ 
+    background:linear-gradient(135deg,var(--accent),var(--accent-2)); 
+    color:white; 
+    border-color:transparent; 
+}
 
 /* ===========
    Projects (RESTORED spacious list style)
    =========== */
-.projects-grid{ display:block; margin-top:.6rem }
+.projects-grid{ 
+    display:block; 
+    margin-top:.6rem; 
+}
+
 .project{
-  display:flex; gap:1rem; align-items:flex-start; padding:1.1rem; border-radius:12px; border:1px solid var(--border); background:var(--bg-card); margin-bottom:1.4rem; box-shadow:var(--shadow-weak);
+  display:flex; 
+  gap:1rem; 
+  align-items:flex-start;
+  padding:1.1rem; 
+  border-radius:12px; 
+  border:1px solid var(--border); 
+  background:var(--bg-card); 
+  margin-bottom:1.4rem; 
+  box-shadow:var(--shadow-weak);
 }
+
 .project .project-header{
-  width:84px; height:84px; border-radius:12px; display:flex; align-items:center; justify-content:center; background:linear-gradient(135deg,var(--accent),var(--accent-2)); color:white; font-size:1.5rem; flex-shrink:0;
+  width:84px; 
+  height:84px; 
+  border-radius:12px; 
+  display:flex; 
+  align-items:center; 
+  justify-content:center; 
+  background:linear-gradient(135deg,var(--accent),var(--accent-2)); 
+  color:white; 
+  font-size:1.5rem; 
+  flex-shrink:0;
 }
-.project .project-content{ flex:1 }
-.project .project-content h4{ margin:0 0 .35rem; font-size:1.05rem; font-weight:700 }
-.project .project-content .project-meta{ font-size:.85rem; color:var(--muted); margin-bottom:.5rem }
-.project .project-content p{ margin:0 0 .5rem; color:var(--muted); line-height:1.45 }
+
+.project .project-content{ 
+    flex:1;
+}
+
+.project .project-content h4{ 
+    margin:0 0 .35rem; 
+    font-size:1.05rem; 
+    font-weight:700; 
+}
+
+.project .project-content .project-meta{ 
+    font-size:.85rem; 
+    color:var(--muted); 
+    margin-bottom:.5rem; 
+}
+
+.project .project-content p{ 
+    margin:0 0 .5rem; 
+    color:var(--muted); 
+    line-height:1.45; 
+}
 
 /* buttons or tags in project */
-.project .tech-stack{ display:flex; gap:.4rem; flex-wrap:wrap }
-.project .tech-tag{ padding:.25rem .5rem; border-radius:8px; background:transparent; border:1px solid var(--border); color:var(--accent); font-size:.78rem }
+.project .tech-stack{ 
+    display:flex; 
+    gap:.4rem; 
+    flex-wrap:wrap 
+}
+
+.project .tech-tag{ 
+    padding:.25rem .5rem; 
+    border-radius:8px; 
+    background:transparent; 
+    border:1px solid var(--border); 
+    color:var(--accent); 
+    font-size:.78rem 
+}
 
 /* ===========
    Teaching & Text content
    =========== */
-.text-content{ background:var(--bg-card); border:1px solid var(--border); padding:1.1rem; border-radius:10px; box-shadow:var(--shadow-weak) }
-.text-content h4{ margin:0 0 .6rem; color:var(--text); font-weight:700 }
-.text-content p, .text-content li{ color:var(--muted); font-size:.92rem; line-height:1.6 }
+.text-content{ 
+    background:var(--bg-card); 
+    border:1px solid var(--border); 
+    padding:1.1rem; 
+    border-radius:10px; 
+    box-shadow:var(--shadow-weak) 
+}
+
+.text-content h4{ 
+    margin:0 0 .6rem; 
+    color:var(--text); 
+    font-weight:700 
+}
+
+.text-content p, .text-content li{ 
+    color:var(--muted); 
+    font-size:.92rem; 
+    line-height:1.6 
+}
 
 /* ===========
    Floating particles & cursor trail
    =========== */
-.floating-elements{ position:fixed; inset:0; pointer-events:none; z-index:-1; overflow:hidden }
-.floating-particle{
-  position:absolute; width:6px; height:6px; border-radius:50%; background:rgba(132,204,22,0.18);
-  animation: float-particle 9s linear infinite; opacity:.9;
+.floating-elements{ 
+    position:fixed; 
+    inset:0; 
+    pointer-events:none; 
+    z-index:-1; 
+    overflow:hidden 
 }
+
+.floating-particle{
+  position:absolute; 
+  width:6px; 
+  height:6px; 
+  border-radius:50%; 
+  background:rgba(132,204,22,0.18);
+  animation: float-particle 9s linear infinite; 
+  opacity:.9;
+}
+
 .floating-particle:nth-child(1){ left:10%; animation-delay:0s; background:rgba(132,204,22,0.18) }
 .floating-particle:nth-child(2){ left:30%; animation-delay:2s; background:rgba(249,115,22,0.14) }
 .floating-particle:nth-child(3){ left:50%; animation-delay:4s; background:rgba(132,204,22,0.12) }
