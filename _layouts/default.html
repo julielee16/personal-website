@@ -22,7 +22,7 @@
           <a href="/cv.pdf" target="_blank">📄 CV</a>
         </div>
       </div>
-      <button id="dark-mode-toggle" class="dark-toggle">🌙 Dark Mode</button>
+      <button id="darkModeToggle" class="dark-mode-btn">🌙</button>
     </div>
   </header>
 
@@ -155,3 +155,26 @@
   <script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
 </body>
 </html>
+<script>
+    const toggleBtn = document.getElementById('darkModeToggle');
+
+    toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+
+    // Change button icon
+    if(document.body.classList.contains('dark-mode')){
+        toggleBtn.textContent = '☀️'; // sun for light mode
+    } else {
+        toggleBtn.textContent = '🌙'; // moon for dark mode
+    }
+
+    // Save preference in localStorage
+    localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+    });
+
+    // Load saved preference
+    if(localStorage.getItem('darkMode') === 'true'){
+    document.body.classList.add('dark-mode');
+    toggleBtn.textContent = '☀️';
+    }
+</script>
