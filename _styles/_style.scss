@@ -196,7 +196,6 @@ body {
 
 .content-section {
     padding: 2.5rem 0;
-    display: flex;
 }
 
 .section-header {
@@ -217,6 +216,10 @@ body {
 }
 
 /* About Section */
+#about {
+    display: flex;
+}
+
 .about-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
