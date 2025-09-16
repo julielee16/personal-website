@@ -11,12 +11,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Clean old Jekyll cache
+        run: rm -rf .jekyll-cache
+
+      - name: Fix permissions
+        run: chmod -R 777 ${{ github.workspace }}
+
       - name: Build site in Docker
         run: |
-          docker run -v ${{ github.workspace }}:/srv/jekyll jekyll/builder:latest \
-          jekyll build --future --destination /srv/jekyll/_site --cache-dir /tmp/jekyll-cache
-
-
+          docker run --user $(id -u):$(id -g) -v ${{ github.workspace }}:/srv/jekyll jekyll/builder:latest \
+          jekyll build --future --destination /srv/jekyll/_site
 
       - name: List _site contents
         run: ls -la _site
