@@ -14,7 +14,8 @@ jobs:
       - name: Build site in Docker
         run: |
           docker run -v ${{ github.workspace }}:/srv/jekyll jekyll/builder:latest \
-          jekyll build --future --destination /srv/jekyll/_site --no-cache
+          jekyll build --future --destination /srv/jekyll/_site --cache-dir /tmp/jekyll-cache
+
 
 
       - name: List _site contents
