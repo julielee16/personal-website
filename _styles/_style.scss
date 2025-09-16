@@ -149,24 +149,58 @@ body{
     font-weight:600
 }
 
-.profile-info h2{font-size:0.86rem;margin:0;color:var(--muted);font-weight:400}
+.profile-info h2{
+    font-size:0.86rem;
+    margin:0;
+    color:var(--muted);
+    font-weight:400
+}
 
 /* contact links small chips */
-.contact-links{ display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.35rem }
+.contact-links{ 
+    display:flex; 
+    gap:.5rem; 
+    flex-wrap:wrap; 
+    margin-top:.35rem 
+}
+
 .contact-links a{
-  display:inline-flex; align-items:center; gap:.4rem;
-  padding:.28rem .7rem; border-radius:14px;
-  background:var(--bg-card); border:1px solid var(--border);
-  font-size:0.82rem; color:var(--muted);
+  display:inline-flex; 
+  align-items:center; 
+  gap:.4rem;
+  padding:.28rem .7rem; 
+  border-radius:14px;
+  background:var(--bg-card); 
+  border:1px solid var(--border);
+  font-size:0.82rem; 
+  color:var(--muted);
   transition: all var(--transition-med);
-  position:relative; overflow:hidden;
+  position:relative; 
+  overflow:hidden;
 }
+
 .contact-links a:before{
-  content:""; position:absolute; left:-110%; top:0; width:100%; height:100%;
-  background:linear-gradient(135deg,var(--accent),var(--accent-2)); z-index:-1; transition:left .28s ease;
+  content:""; 
+  position:absolute; 
+  left:-110%; 
+  top:0; 
+  width:100%; 
+  height:100%;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2)); 
+  z-index:-1; 
+  transition:left .28s ease;
 }
-.contact-links a:hover{ color:white; transform:translateY(-3px); box-shadow:var(--shadow-medium); border-color:transparent }
-.contact-links a:hover:before{ left:0 }
+
+.contact-links a:hover{ 
+    color:white; 
+    transform:translateY(-3px); 
+    box-shadow:var(--shadow-medium); 
+    border-color:transparent 
+}
+
+.contact-links a:hover:before{ 
+    left:0 
+}
 
 /* dark-mode button small */
 #dark-mode-toggle{
@@ -179,7 +213,11 @@ body{
   cursor:pointer;
   transition: all var(--transition-fast);
 }
-#dark-mode-toggle:hover{ transform:scale(1.04); box-shadow:var(--shadow-weak) }
+
+#dark-mode-toggle:hover{ 
+    transform:scale(1.04); 
+    box-shadow:var(--shadow-weak) 
+}
 
 /* ===========
    Navigation
@@ -190,20 +228,64 @@ body{
   border-bottom:1px solid var(--border);
   position:sticky; top:56px; z-index:40; /* below header */
 }
-.nav-inner{ max-width:var(--container-width); margin:0 auto; padding:0 1.5rem; display:flex; align-items:center; }
-.nav-menu{ list-style:none; display:flex; gap:0; padding:0; margin:0; overflow:auto; -webkit-overflow-scrolling:touch }
-.nav-menu li{ margin:0 }
+
+.nav-inner{ 
+    max-width:var(--container-width); 
+    margin:0 auto; 
+    padding:0 1.5rem; 
+    display:flex; 
+    align-items:center; 
+}
+
+.nav-menu{ 
+    list-style:none; 
+    display:flex; 
+    gap:0; 
+    padding:0; 
+    margin:0; 
+    overflow:auto; 
+    -webkit-overflow-scrolling:touch 
+}
+
+.nav-menu li{ 
+    margin:0 
+}
+
 .nav-menu a{
-  display:inline-flex; align-items:center; gap:.4rem;
-  padding:.62rem .9rem; color:var(--muted); font-size:.85rem; border-radius:8px;
+  display:inline-flex; 
+  align-items:center; 
+  gap:.4rem;
+  padding:.62rem .9rem; 
+  color:var(--muted); 
+  font-size:.85rem; 
+  border-radius:8px;
   transition:color var(--transition-fast), background var(--transition-fast);
 }
-.nav-menu a:hover{ color:var(--accent); background:rgba(0,0,0,0.02) }
-.nav-menu a.active{ color:var(--accent); font-weight:600 }
+
+.nav-menu a:hover{ 
+    color:var(--accent); 
+    background:rgba(0,0,0,0.02) 
+}
+
+.nav-menu a.active{ 
+    color:var(--accent); 
+    font-weight:600 
+}
 
 /* small underline hover effect */
-.nav-menu a::after{ content:""; display:block; height:2px; width:0; background:var(--accent); margin-top:.4rem; transition:width .18s ease }
-.nav-menu a:hover::after, .nav-menu a.active::after{ width:70% }
+.nav-menu a::after{ 
+    content:""; 
+    display:block; 
+    height:2px; 
+    width:0; 
+    background:var(--accent); 
+    margin-top:.4rem; 
+    transition:width .18s ease 
+}
+
+.nav-menu a:hover::after, .nav-menu a.active::after{ 
+    width:70% 
+}
 
 /* ===========
    Main content & spacing
