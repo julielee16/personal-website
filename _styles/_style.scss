@@ -36,7 +36,7 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #83a762, #f97316);
+    background: linear-gradient(135deg, #83a762, #ede5ab);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -265,7 +265,7 @@ body {
 }
 
 .skill-category h4 {
-    color: #f97316;
+    color: #ede5ab;
     margin-bottom: 0.6rem;
     font-weight: 500;
     font-size: 0.85rem;
@@ -298,7 +298,7 @@ body {
     left: 50%;
     width: 0;
     height: 0;
-    background: radial-gradient(circle, #83a762, #f97316);
+    background: radial-gradient(circle, #83a762, #ede5ab);
     transition: all 0.3s ease;
     transform: translate(-50%, -50%);
     border-radius: 50%;
@@ -407,7 +407,7 @@ body {
     left: 0;
     width: 3px;
     height: 100%;
-    background: linear-gradient(135deg, #83a762, #f97316);
+    background: linear-gradient(135deg, #83a762, #ede5ab);
     border-radius: 8px 0 0 8px;
     transition: width 0.3s ease;
 }
@@ -425,7 +425,7 @@ body {
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
-    background: linear-gradient(135deg, #f97316, #83a762);
+    background: linear-gradient(135deg, #ede5ab, #83a762);
     color: white;
     padding: 0.3rem 0.8rem;
     border-radius: 10px;
@@ -534,7 +534,7 @@ body {
 
 .project-header {
     height: 80px;
-    background: linear-gradient(135deg, #83a762, #f97316);
+    background: linear-gradient(135deg, #83a762, #ede5ab);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -566,7 +566,7 @@ body {
     background: #f9fafb;
     padding: 0.15rem 0.5rem;
     border-radius: 6px;
-    color: #f97316;
+    color: #ede5ab;
     font-weight: 400;
     border: 1px solid #f3f4f6;
 }
