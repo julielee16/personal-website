@@ -635,23 +635,55 @@ body{
   opacity:.9;
 }
 
-.floating-particle:nth-child(1){ left:10%; animation-delay:0s; background:rgba(132,204,22,0.18) }
-.floating-particle:nth-child(2){ left:30%; animation-delay:2s; background:rgba(249,115,22,0.14) }
-.floating-particle:nth-child(3){ left:50%; animation-delay:4s; background:rgba(132,204,22,0.12) }
-.floating-particle:nth-child(4){ left:70%; animation-delay:6s; background:rgba(249,115,22,0.12) }
-.floating-particle:nth-child(5){ left:90%; animation-delay:1s; background:rgba(132,204,22,0.08) }
+.floating-particle:nth-child(1){ 
+    left:10%; 
+    animation-delay:0s; 
+    background:rgba(132,204,22,0.18); 
+}
+
+.floating-particle:nth-child(2){ 
+    left:30%; 
+    animation-delay:2s; 
+    background:rgba(249,115,22,0.14); 
+}
+
+.floating-particle:nth-child(3){ 
+    left:50%;
+    animation-delay:4s; 
+    background:rgba(132,204,22,0.12); 
+}
+
+.floating-particle:nth-child(4){ 
+    left:70%; 
+    animation-delay:6s; 
+    background:rgba(249,115,22,0.12); 
+}
+
+.floating-particle:nth-child(5){ 
+    left:90%; 
+    animation-delay:1s; 
+    background:rgba(132,204,22,0.08); 
+}
 
 @keyframes float-particle{
-  0%{ transform:translateY(100vh) scale(0); opacity:0 }
-  10%{ opacity:1 }
-  90%{ opacity:1 }
-  100%{ transform:translateY(-10vh) scale(1); opacity:0 }
+  0%{ transform:translateY(100vh) scale(0);
+    opacity:0; }
+  10%{ opacity:1; }
+  90%{ opacity:1; }
+  100%{ transform:translateY(-10vh) scale(1); 
+    opacity:0; }
 }
 
 /* cursor trail */
 .cursor-trail{
-  position:fixed; width:18px; height:18px; border-radius:50%;
-  pointer-events:none; z-index:9999; opacity:0; transform:translate(-50%,-50%);
+  position:fixed; 
+  width:18px; 
+  height:18px; 
+  border-radius:50%;
+  pointer-events:none; 
+  z-index:9999; 
+  opacity:0; 
+  transform:translate(-50%,-50%);
   background: radial-gradient(circle, rgba(132,204,22,0.25), rgba(249,115,22,0.08));
   transition: opacity 0.12s linear, transform 0.08s linear;
 }
@@ -659,25 +691,48 @@ body{
 /* ===========
    Scrollbar
    =========== */
-::-webkit-scrollbar{ width:6px; height:6px }
-::-webkit-scrollbar-track{ background:var(--scroll-track) }
-::-webkit-scrollbar-thumb{ background:var(--scroll-thumb); border-radius:6px }
+::-webkit-scrollbar{ 
+    width:6px; 
+    height:6px 
+}
+
+::-webkit-scrollbar-track{ 
+    background:var(--scroll-track) 
+}
+
+::-webkit-scrollbar-thumb{ 
+    background:var(--scroll-thumb); 
+    border-radius:6px 
+}
 
 /* ===========
    Small screens responsive
    =========== */
 @media (max-width:768px){
-  .about-grid{ grid-template-columns:1fr }
-  .header-inner{ padding:0 1rem; gap:.65rem }
-  .profile-photo{ width:72px;height:72px; font-size:1.6rem }
+  .about-grid{ grid-template-columns:1fr; }
+  .header-inner{ padding:0 1rem; 
+    gap:.65rem; }
+  .profile-photo{ width:72px;
+    height:72px; 
+    font-size:1.6rem; }
   .main-content{ padding:0 1rem }
-  .nav-menu{ gap:.25rem; overflow:auto; padding: .4rem 0 }
-  .project{ flex-direction:column; align-items:stretch }
-  .publication{ padding:1rem }
+  .nav-menu{ gap:.25rem; 
+    overflow:auto; 
+    padding: .4rem 0; }
+  .project{ flex-direction:column; 
+    align-items:stretch; }
+  .publication{ padding:1rem; }
 }
 
 /* ===========
    Minor helpers
    =========== */
-.center{ display:flex; align-items:center; justify-content:center }
-.hidden{ display:none }
+.center{ 
+    display:flex; 
+    align-items:center; 
+    justify-content:center; 
+}
+
+.hidden{ 
+    display:none; 
+}
