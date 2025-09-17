@@ -13,6 +13,11 @@ body {
     font-size: 14px;
 }
 
+mark {
+  background-color: #f97316;
+  color: #84cc16;
+}
+
 /* Header */
 .header {
     background: rgba(255, 255, 255, 0.95);
@@ -390,7 +395,7 @@ body {
 .publication {
     background: white;
     border-radius: 10px;
-    padding: 2rem;
+    padding: 0.8rem 2rem;
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     cursor: pointer;
     border: 1px solid #f3f4f6;
