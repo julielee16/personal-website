@@ -14,7 +14,7 @@ body {
 }
 
 mark {
-  background-color: #3E885B;
+  background-color: #EE4266;
   color: #ffffff;
 }
 
@@ -39,7 +39,7 @@ mark {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #2F4B26, #3E885B);
+    background: linear-gradient(135deg, #2A1E5C, #EE4266);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,7 +112,7 @@ mark {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #2F4B26, #3E885B);
+    background: linear-gradient(135deg, #2A1E5C, #EE4266);
     transition: left 0.3s ease;
     z-index: -1;
 }
@@ -170,14 +170,14 @@ mark {
     left: 50%;
     width: 0;
     height: 1px;
-    background: #2F4B26;
+    background: #2A1E5C;
     transition: all 0.15s ease;
     transform: translateX(-50%);
 }
 
 .nav-menu a:hover,
 .nav-menu a.active {
-    color: #2F4B26;
+    color: #2A1E5C;
 }
 
 .nav-menu a:hover:before,
@@ -236,7 +236,7 @@ mark {
 }
 
 .bio-content h4 {
-    color: #2F4B26;
+    color: #2A1E5C;
     font-size: 1rem;
     margin-bottom: 1rem;
     font-weight: 500;
@@ -269,7 +269,7 @@ mark {
 }
 
 .skill-category h4 {
-    color: #3E885B;
+    color: #EE4266;
     margin-bottom: 0.6rem;
     font-weight: 500;
     font-size: 0.85rem;
@@ -283,7 +283,7 @@ mark {
 
 .skill-tag {
     background: #f9fafb;
-    color: #2F4B26;
+    color: #2A1E5C;
     padding: 0.3rem 0.7rem;
     border-radius: 12px;
     font-size: 0.75rem;
@@ -302,7 +302,7 @@ mark {
     left: 50%;
     width: 0;
     height: 0;
-    background: radial-gradient(circle, #2F4B26, #3E885B);
+    background: radial-gradient(circle, #2A1E5C, #EE4266);
     transition: all 0.3s ease;
     transform: translate(-50%, -50%);
     border-radius: 50%;
@@ -411,7 +411,7 @@ mark {
     left: 0;
     width: 3px;
     height: 100%;
-    background: linear-gradient(135deg, #2F4B26, #3E885B);
+    background: linear-gradient(135deg, #2A1E5C, #EE4266);
     border-radius: 8px 0 0 8px;
     transition: width 0.3s ease;
 }
@@ -429,7 +429,7 @@ mark {
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
-    background: linear-gradient(135deg, #3E885B, #2F4B26);
+    background: linear-gradient(135deg, #EE4266, #2A1E5C);
     color: white;
     padding: 0.3rem 0.8rem;
     border-radius: 10px;
@@ -460,7 +460,7 @@ mark {
 }
 
 .publication .venue {
-    color: #2F4B26;
+    color: #2A1E5C;
     font-weight: 500;
     margin-bottom: 0.6rem;
     font-size: 0.8rem;
@@ -481,7 +481,7 @@ mark {
 
 .publication-links a {
     background: #f9fafb;
-    color: #2F4B26;
+    color: #2A1E5C;
     text-decoration: none;
     padding: 0.4rem 0.9rem;
     border-radius: 12px;
@@ -500,7 +500,7 @@ mark {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: #2F4B26;
+    background: #2A1E5C;
     transition: left 0.3s ease;
     z-index: -1;
 }
@@ -538,7 +538,7 @@ mark {
 
 .project-header {
     height: 80px;
-    background: linear-gradient(135deg, #2F4B26, #3E885B);
+    background: linear-gradient(135deg, #2A1E5C, #EE4266);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -570,7 +570,7 @@ mark {
     background: #f9fafb;
     padding: 0.15rem 0.5rem;
     border-radius: 6px;
-    color: #3E885B;
+    color: #EE4266;
     font-weight: 400;
     border: 1px solid #f3f4f6;
 }
@@ -590,7 +590,7 @@ mark {
 
 .tech-tag {
     background: #f9fafb;
-    color: #2F4B26;
+    color: #2A1E5C;
     padding: 0.15rem 0.5rem;
     border-radius: 6px;
     font-size: 0.7rem;
@@ -764,6 +764,6 @@ mark {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #2F4B26;
+    background: #2A1E5C;
     border-radius: 2px;
 }
