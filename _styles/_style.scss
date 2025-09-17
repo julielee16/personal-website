@@ -14,7 +14,7 @@ body {
 }
 
 mark {
-  background-color: #282F44;
+  background-color: #016FB9;
   color: #ffffff;
 }
 
@@ -39,7 +39,7 @@ mark {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #182825, #282F44);
+    background: linear-gradient(135deg, #182825, #016FB9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,7 +112,7 @@ mark {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #182825, #282F44);
+    background: linear-gradient(135deg, #182825, #016FB9);
     transition: left 0.3s ease;
     z-index: -1;
 }
@@ -269,7 +269,7 @@ mark {
 }
 
 .skill-category h4 {
-    color: #282F44;
+    color: #016FB9;
     margin-bottom: 0.6rem;
     font-weight: 500;
     font-size: 0.85rem;
@@ -302,7 +302,7 @@ mark {
     left: 50%;
     width: 0;
     height: 0;
-    background: radial-gradient(circle, #182825, #282F44);
+    background: radial-gradient(circle, #182825, #016FB9);
     transition: all 0.3s ease;
     transform: translate(-50%, -50%);
     border-radius: 50%;
@@ -411,7 +411,7 @@ mark {
     left: 0;
     width: 3px;
     height: 100%;
-    background: linear-gradient(135deg, #182825, #282F44);
+    background: linear-gradient(135deg, #182825, #016FB9);
     border-radius: 8px 0 0 8px;
     transition: width 0.3s ease;
 }
@@ -429,7 +429,7 @@ mark {
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
-    background: linear-gradient(135deg, #282F44, #182825);
+    background: linear-gradient(135deg, #016FB9, #182825);
     color: white;
     padding: 0.3rem 0.8rem;
     border-radius: 10px;
@@ -538,7 +538,7 @@ mark {
 
 .project-header {
     height: 80px;
-    background: linear-gradient(135deg, #182825, #282F44);
+    background: linear-gradient(135deg, #182825, #016FB9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -570,7 +570,7 @@ mark {
     background: #f9fafb;
     padding: 0.15rem 0.5rem;
     border-radius: 6px;
-    color: #282F44;
+    color: #016FB9;
     font-weight: 400;
     border: 1px solid #f3f4f6;
 }
