@@ -803,3 +803,14 @@ footer a:hover {
 .footer-links {
     margin-bottom: 0.8rem;
 }
+
+/* Wave background */
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: #83C5BE;
+    clip-path: polygon(0 40%, 20% 60%, 40% 30%, 60% 70%, 80% 40%, 100% 60%, 100% 100%, 0 100%);
+}
