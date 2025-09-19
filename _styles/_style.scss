@@ -768,3 +768,27 @@ mark {
     background: #006D77;
     border-radius: 2px;
 }
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #ddd;
+    margin: 0 0.8rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+.footer-links {
+    margin-bottom: 0.8rem;
+}
