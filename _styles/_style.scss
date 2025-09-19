@@ -813,7 +813,7 @@ footer a:hover {
     height: 160px;
     overflow: hidden;
     line-height: 0;
-    z-index: 99;
+    z-index: -1;
 }
 
 .waves svg {
