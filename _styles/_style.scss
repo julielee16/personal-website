@@ -770,9 +770,25 @@ a {
 
   .nav-link { font-size: 0.7rem; }
 
+  /* The pill overflows a phone-width bar; email lives in About and the footer */
+  .nav-link-cta { display: none; }
+
   .hero { min-height: 100svh; }
 
   .hero-layer { padding-top: 5rem; padding-bottom: 6rem; }
+
+  /* Re-anchor the widest floats to the right edge so nothing clips offscreen */
+  .hero-subtext .float-word:nth-of-type(3),
+  .hero-subtext .float-word:nth-of-type(7),
+  .hero-subtext .float-word:nth-of-type(11) {
+    left: auto;
+    right: 4%;
+  }
+
+  /* keep 행간 clear of "what was left unsaid" on narrow screens */
+  .hero-subtext .float-word:nth-of-type(10) {
+    left: 48%;
+  }
 
   .pub {
     grid-template-columns: 1fr;

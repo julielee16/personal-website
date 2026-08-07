@@ -15,7 +15,11 @@
       "Bash(open /private/tmp/claude-501/-Users-JuhoonLee-Documents-GitHub-personal-website/78d592d1-3c55-4045-8de7-e8f0fd376c26/scratchpad/preview/index.html)",
       "WebFetch(domain:scholar.google.com)",
       "WebFetch(domain:arxiv.org)",
-      "Bash(open \"/private/tmp/claude-501/-Users-JuhoonLee-Documents-GitHub-personal-website/78d592d1-3c55-4045-8de7-e8f0fd376c26/scratchpad/preview/index.html\")"
+      "Bash(open \"/private/tmp/claude-501/-Users-JuhoonLee-Documents-GitHub-personal-website/78d592d1-3c55-4045-8de7-e8f0fd376c26/scratchpad/preview/index.html\")",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless --disable-gpu --hide-scrollbars --window-size=390,844 --virtual-time-budget=4000 --screenshot=/private/tmp/claude-501/-Users-JuhoonLee-Documents-GitHub-personal-website/78d592d1-3c55-4045-8de7-e8f0fd376c26/scratchpad/m-hero.png file:///private/tmp/claude-501/-Users-JuhoonLee-Documents-GitHub-personal-website/78d592d1-3c55-4045-8de7-e8f0fd376c26/scratchpad/preview/index.html)",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless --disable-gpu --hide-scrollbars --window-size=390,844 --screenshot=/private/tmp/claude-501/-Users-JuhoonLee-Documents-GitHub-personal-website/78d592d1-3c55-4045-8de7-e8f0fd376c26/scratchpad/m-subtext.png file:///private/tmp/claude-501/-Users-JuhoonLee-Documents-GitHub-personal-website/78d592d1-3c55-4045-8de7-e8f0fd376c26/scratchpad/preview/subtext.html)",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless --disable-gpu --virtual-time-budget=4000 --dump-dom file:///private/tmp/claude-501/-Users-JuhoonLee-Documents-GitHub-personal-website/78d592d1-3c55-4045-8de7-e8f0fd376c26/scratchpad/preview/debug.html)",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless --disable-gpu --allow-file-access-from-files --virtual-time-budget=6000 --dump-dom file:///private/tmp/claude-501/-Users-JuhoonLee-Documents-GitHub-personal-website/78d592d1-3c55-4045-8de7-e8f0fd376c26/scratchpad/preview/debug.html)"
     ]
   }
 }

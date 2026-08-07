@@ -164,7 +164,7 @@
     <section id="publications" class="section reveal">
       <div class="section-head">
         <span class="section-index">03</span>
-        <h2>Publications <span class="section-kr">출판</span></h2>
+        <h2>Publications <span class="section-kr">논문</span></h2>
       </div>
 
       <h3 class="pub-group-title">Conference Papers &amp; Journals</h3>
@@ -265,7 +265,7 @@
   <!-- Footer lives in the subtext world -->
   <footer class="footer">
     <p class="footer-kicker">the part beneath the words</p>
-    <h2 class="footer-title">Let's Talk</h2>
+    <h2 class="footer-title">Let's Talk!</h2>
     <div class="footer-links">
       <a href="mailto:juhoonlee@kaist.ac.kr">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7.5 9 6 9-6"/></svg>
@@ -316,6 +316,10 @@
       }
 
       window.addEventListener('mousemove', e => setTargetFromEvent(e.clientX, e.clientY), { passive: true });
+      window.addEventListener('touchstart', e => {
+        const t = e.touches[0];
+        if (t) setTargetFromEvent(t.clientX, t.clientY);
+      }, { passive: true });
       window.addEventListener('touchmove', e => {
         const t = e.touches[0];
         if (t) setTargetFromEvent(t.clientX, t.clientY);
