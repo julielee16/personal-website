@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bundle install *)",
+      "Bash(bundle exec *)",
+      "Bash(npx --yes sass --load-path=/Users/JuhoonLee/Documents/GitHub/personal-website/_styles test.scss test.css)",
+      "Bash(mkdir -p /private/tmp/claude-501/-Users-JuhoonLee-Documents-GitHub-personal-website/78d592d1-3c55-4045-8de7-e8f0fd376c26/scratchpad)",
+      "Bash(echo \"exit=$?\")",
+      "Bash(mkdir -p preview/assets/images preview/assets/css)",
+      "Bash(cp test.css preview/assets/css/main.css)",
+      "Bash(cp /Users/JuhoonLee/Documents/GitHub/personal-website/assets/images/profile.jpeg preview/assets/images/)",
+      "Bash(sed -e \"s|{{ '/assets/css/main.css' | prepend: site.baseurl }}|/assets/css/main.css|g\" /Users/JuhoonLee/Documents/GitHub/personal-website/_layouts/default.html)",
+      "Bash(python3 -)",
+      "Bash(node --check /private/tmp/claude-501/-Users-JuhoonLee-Documents-GitHub-personal-website/78d592d1-3c55-4045-8de7-e8f0fd376c26/scratchpad/inline.js)",
+      "Bash(open /private/tmp/claude-501/-Users-JuhoonLee-Documents-GitHub-personal-website/78d592d1-3c55-4045-8de7-e8f0fd376c26/scratchpad/preview/index.html)",
+      "WebFetch(domain:scholar.google.com)",
+      "WebFetch(domain:arxiv.org)",
+      "Bash(open \"/private/tmp/claude-501/-Users-JuhoonLee-Documents-GitHub-personal-website/78d592d1-3c55-4045-8de7-e8f0fd376c26/scratchpad/preview/index.html\")"
+    ]
+  }
+}

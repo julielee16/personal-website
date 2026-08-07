@@ -3,414 +3,377 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Juhoon Lee</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>Juhoon Lee — Translation lives in the space between the words</title>
+  <meta name="description" content="Juhoon (Julie) Lee is a Ph.D. student at KAIST School of Computing researching cross-lingual, AI-mediated communication.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+KR:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
 </head>
 <body>
-    <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-container">
-            <div class="profile-photo"><img src="/assets/images/profile.jpeg"></div>
-            <div class="profile-info">
-                <h1>Juhoon Lee</h1>
-                <h2>HCI Researcher at KAIST School of Computing</h2>
-                <div class="contact-links">
-                    <a href="mailto:juhoonlee@kaist.ac.kr">📧 Email</a>
-                    <a href="https://scholar.google.com/citations?user=YmjG9ygAAAAJ&hl=en" target="_blank">🇬 Google Scholar</a>
-                    <a href="https://www.linkedin.com/in/juhoon-l-657489100/" target="_blank">[in] LinkedIn</a>
-                    <a href="https://x.com/juhoonjulie" target="_blank">𝕏 Twitter</a>
-                    <!-- <a href="/cv.pdf" target="_blank">📄 CV</a> -->
-                </div>
-                <!-- Waves -->
-                <div class="waves">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                        <defs>
-                        <!-- Back wave (bigger, taller) -->
-                        <path id="wavePathBack" d="M0,50 C400,120 800,0 1200,60 V120 H0 Z" />
-                        <!-- Front wave (lower and flatter) -->
-                        <path id="wavePathFront" d="M0,100 C900,30 1200,0 1200,90 V120 H0 Z" />
-                        </defs>
 
-                        <!-- Back wave -->
-                        <g class="wave2">
-                        <use href="#wavePathBack" x="0" y="0" fill="#006D77"/>
-                        <use href="#wavePathBack" x="1200" y="0" fill="#006D77"/>
-                        </g>
+  <!-- Navigation -->
+  <nav class="nav">
+    <a class="nav-name" href="#top">Juhoon Lee <span class="nav-name-kr">이주훈</span></a>
+    <div class="nav-links">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#research" class="nav-link">Research</a>
+      <a href="#publications" class="nav-link">Publications</a>
+      <a href="mailto:juhoonlee@kaist.ac.kr" class="nav-link nav-link-cta">Contact</a>
+    </div>
+  </nav>
 
-                        <!-- Front wave -->
-                        <g class="wave1">
-                        <use href="#wavePathFront" x="0" y="0" fill="#83C5BE"/>
-                        <use href="#wavePathFront" x="1200" y="0" fill="#83C5BE"/>
-                        </g>
-                    </svg>
-                </div>
-            </div>
+  <!-- Hero: the surface and what lies beneath -->
+  <header class="hero" id="top">
+
+    <!-- Surface layer -->
+    <div class="hero-layer hero-surface">
+      <p class="hero-eyebrow">Juhoon (Julie) Lee — Ph.D. student, KAIST School of Computing</p>
+      <h1 class="hero-title">Translation lives in<br>the space <em>between</em><br>the words.</h1>
+      <div class="hero-rule" aria-hidden="true"></div>
+    </div>
+
+    <!-- Subtext layer, revealed through the lens -->
+    <div class="hero-layer hero-subtext" aria-hidden="true">
+      <p class="hero-eyebrow">이주훈 — 카이스트 전산학부 박사과정</p>
+      <h1 class="hero-title hero-title-kr">번역은 단어 사이의<br>공간에 있다.</h1>
+      <span class="float-word" style="--fx:5%;  --fy:17%; --fd:9s;  --fdel:0s">눈치</span>
+      <span class="float-word float-note" style="--fx:30%; --fy:15%; --fd:10s; --fdel:.9s">who is speaking?</span>
+      <span class="float-word" style="--fx:64%; --fy:14%; --fd:11s; --fdel:1.2s">本音とたてまえ</span>
+      <span class="float-word float-note float-right" style="--fr:5%; --fy:27%; --fd:10s; --fdel:2.4s">to whom?</span>
+      <span class="float-word" style="--fx:60%; --fy:40%; --fd:10s; --fdel:2s">정(情)</span>
+      <span class="float-word float-right" style="--fr:7%; --fy:49%; --fd:8s;  --fdel:.6s">saudade</span>
+      <span class="float-word float-note" style="--fx:66%; --fy:63%; --fd:9s;  --fdel:1.8s">tone · register</span>
+      <span class="float-word float-right" style="--fr:9%; --fy:74%; --fd:12s; --fdel:.3s">Fernweh</span>
+      <span class="float-word float-note" style="--fx:5%;  --fy:87%; --fd:11s; --fdel:.4s">what was left unsaid</span>
+      <span class="float-word" style="--fx:36%; --fy:86%; --fd:10s; --fdel:1.4s">행간</span>
+      <span class="float-word float-note" style="--fx:58%; --fy:88%; --fd:11s; --fdel:2.1s">honorifics · 존댓말</span>
+    </div>
+
+    <div class="lens-ring" aria-hidden="true"></div>
+
+    <a href="#about" class="hero-cta">about · 소개 <span class="cta-arrow">↓</span></a>
+  </header>
+
+  <main>
+
+    <!-- About -->
+    <section id="about" class="section reveal">
+      <div class="section-head">
+        <span class="section-index">01</span>
+        <h2>About <span class="section-kr">소개</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-photo">
+          <img src="/assets/images/profile.jpeg" alt="Portrait of Juhoon Lee">
+          <div class="photo-caption">Juhoon (Julie) Lee · she/her</div>
         </div>
-    </header>
-
-    <!-- Navigation -->
-    <nav class="navigation">
-        <div class="nav-container">
-            <ul class="nav-menu">
-                <li><a href="#about" class="nav-link active"><span class="nav-icon">👋</span>About</a></li>
-                <!-- <li><a href="#research" class="nav-link"><span class="nav-icon">🔬</span>Research</a></li> -->
-                <li><a href="#projects" class="nav-link"><span class="nav-icon">💡</span>Projects</a></li>
-                <li><a href="#publications" class="nav-link"><span class="nav-icon">📚</span>Publications</a></li>
-                <!-- <li><a href="#teaching" class="nav-link"><span class="nav-icon">🎓</span>Teaching</a></li> -->
-                <!-- <li><a href="#contact" class="nav-link"><span class="nav-icon">📧</span>Contact</a></li> -->
-            </ul>
+        <div class="about-bio">
+          <p class="bio-lede">I study what gets lost when machines carry our words across languages and how to carry the rest.</p>
+          <p>I am a Ph.D. student at the <a href="https://cs.kaist.ac.kr/">KAIST School of Computing</a>, working with <a href="https://joseph.seering.org/">Prof. Joseph Seering</a> in the <a href="https://cstlab.org/">Collaborative Social Technologies Lab (CSTL🏰)</a>.</p>
+          <p>My research tackles the social and cultural flattening that happens in cross-lingual, AI-mediated communication. Combining HCI methodologies with NLP, I work on redefining <span class="gloss" data-gloss="번역">translation</span> as a situated, socially embedded process beyond a semantic exchange. I explore how the <span class="gloss" data-gloss="맥락">context</span>, the <span class="gloss" data-gloss="관계">relationship</span> between speakers, and the <span class="gloss" data-gloss="문화">culture</span> drive how the message and intent are communicated.</p>
+          <p>I aim to build foundational frameworks where translation technologies become transparent and contextually rich.</p>
+          <div class="contact-row">
+            <a href="mailto:juhoonlee@kaist.ac.kr">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7.5 9 6 9-6"/></svg>
+              Email</a>
+            <a href="https://scholar.google.com/citations?user=YmjG9ygAAAAJ&hl=en" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4 2 9.3l10 5.3 10-5.3L12 4z"/><path d="M6.2 11.8V16c0 1.6 2.6 2.9 5.8 2.9s5.8-1.3 5.8-2.9v-4.2"/><path d="M22 9.3v4.5"/></svg>
+              Google Scholar</a>
+            <a href="https://www.linkedin.com/in/juhoon-l-657489100/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+              LinkedIn</a>
+            <a href="https://x.com/juhoonjulie" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 2.5h3.68l-8.04 9.2L24 21.5h-7.41l-5.8-7.59-6.64 7.59H.47l8.6-9.83L0 2.5h7.59l5.24 6.93L18.9 2.5zm-1.29 16.8h2.04L6.49 4.59H4.3l13.31 14.71z"/></svg>
+              Twitter</a>
+          </div>
         </div>
-    </nav>
+      </div>
+    </section>
 
-    <!-- Main Content -->
-    <main class="main-content">
-        <!-- Floating Elements -->
-        <!-- <div class="floating-elements">
-            <div class="floating-particle"></div>
-            <div class="floating-particle"></div>
-            <div class="floating-particle"></div>
-            <div class="floating-particle"></div>
-            <div class="floating-particle"></div>
-        </div> -->
+    <!-- Research -->
+    <section id="research" class="section reveal">
+      <div class="section-head">
+        <span class="section-index">02</span>
+        <h2>Research <span class="section-kr">연구</span></h2>
+      </div>
+      <div class="project-grid">
 
-        <!-- About Section -->
-        <section id="about" class="content-section">
-            <div class="about-grid">
-                <div class="bio-content">
-                    <div class="section-header">
-                        <h3>Welcome!</h3>
-                        <p>I am Juhoon (Julie) Lee, a second year Ph.D. student at <a href="https://cs.kaist.ac.kr/">KAIST School of Computing</a>. I am working with <a href="https://joseph.seering.org/">Prof. Joseph Seering</a> in <a href="https://cstlab.org/">Collaborative Social Technologies Lab (CSTL🏰)</a>. </p>
-                        <p>My research centers on <b>Trust and Safety</b>, specifically in the field of <b>contextualized localization across cultures</b> and <b>decentralized governance</b> in online communities. I aim to create a framework for fostering safer, more inclusive, and culturally attuned online environments. By centering community voices and local norms, my work seeks to bridge global standards of safety with the diversity of lived online experiences.
-                    </div>
-                </div>
-                
-                <div class="skills-panel">
-                    <div class="skill-category">
-                        <h4>News</h4>
-                        <div>
-                            <p>Oct 2025 | Presenting <a href="#">Mapping Appeals at CSCW25!</a></p>
-                            <br>
-                            <p>Apr 2025 | Presenting <a href="#">Less Talk, More Trust</a> at CHI25!</p>
-                            <br>
-                            <p>Mar 2025 | <a href="#">Mapping Appeals</a> paper accepted to CSCW25</p>
-                            <br>
-                            <p>Jan 2025 | <a href="#">Less Talk, More Trust</a> paper accepted to CHI25</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2.5" y="3" width="11" height="8" rx="2"/>
+                <path d="M6.5 11v3l3-3"/>
+                <rect x="10.5" y="12.5" width="11" height="8" rx="2"/>
+                <path d="M17.5 20.5v3l-3-3"/>
+              </svg>
+            </span>
+            <div class="project-num"><span class="num-en">01</span><span class="num-kr">일</span></div>
+          </div>
+          <h3>Relationship-Aware Translation Evaluation</h3>
+          <p>Developing evaluation metrics beyond semantic scores (BLEU, COMET) that judge a translation by the relationship it travels through.</p>
+          <div class="tag-row">
+            <span class="tag">Evaluation Metrics</span>
+            <span class="tag">NLP</span>
+            <span class="tag">Interpersonal Context</span>
+          </div>
+        </article>
 
-        <!-- Research Section
-        <section id="research" class="content-section">
-            <div class="section-header">
-                <h3>Research Interests</h3>
-                <p class="section-subtitle">Exploring human cognition and digital innovation</p>
-            </div>
-            
-            <div class="research-grid">
-                <div class="research-card">
-                    <span class="research-icon">🤖</span>
-                    <h4>Human-AI Collaboration</h4>
-                    <p>Investigating how humans and AI systems work together effectively, focusing on trust and transparency in collaborative interfaces.</p>
-                </div>
-                
-                <div class="research-card">
-                    <span class="research-icon">♿</span>
-                    <h4>Accessible Computing</h4>
-                    <p>Designing inclusive technologies that accommodate diverse abilities with emphasis on assistive technologies and universal design.</p>
-                </div>
-                
-                <div class="research-card">
-                    <span class="research-icon">📱</span>
-                    <h4>Mobile & Ubiquitous Computing</h4>
-                    <p>Exploring novel interaction techniques for mobile devices and investigating how ubiquitous computing enhances daily activities.</p>
-                </div>
-                
-                <div class="research-card">
-                    <span class="research-icon">🧠</span>
-                    <h4>Cognitive Load & Attention</h4>
-                    <p>Understanding how interface design affects cognitive processes and attention allocation in complex digital environments.</p>
-                </div>
-            </div>
-        </section> -->
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2 5.5 13H10l-2 9 8.5-11H12l2-9z"/>
+              </svg>
+            </span>
+            <div class="project-num"><span class="num-en">02</span><span class="num-kr">이</span></div>
+          </div>
+          <h3>Interactional Frictions in the Wild</h3>
+          <p>Analyzing the frictions that emerge when people actually use translation tools in multicultural settings.</p>
+          <div class="tag-row">
+            <span class="tag">Empirical Study</span>
+            <span class="tag">Multicultural Settings</span>
+            <span class="tag">CSCW</span>
+          </div>
+        </article>
 
-         <!-- Projects Section -->
-        <section id="projects" class="content-section">
-            <div class="section-header">
-                <h3>Current Research Projects</h3>
-            </div>
-            
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">🏛️</div>
-                    <div class="project-content">
-                        <h4>ModPolicy: Investigating Perceived Roles of Stakeholders in Decentralized Governance</h4>
-                        <div class="project-meta">
-                            <span>2025 - Present</span>
-                            <span>Ongoing</span>
-                        </div>
-                        <p class="project-description">Understanding stakeholders' perceived roles and responsibilities within decentralized online governance systems</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Multi-level Governance</span>
-                            <span class="tech-tag">Trust and Safety</span>
-                            <span class="tech-tag">Moderation</span>
-                        </div>
-                    </div>
-                </div>
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12z"/>
+                <circle cx="12" cy="12" r="2.6"/>
+              </svg>
+            </span>
+            <div class="project-num"><span class="num-en">03</span><span class="num-kr">삼</span></div>
+          </div>
+          <h3>Hyper-Visible Interpreter Agents</h3>
+          <p>Designing persistent, hyper-visible interpreter agents that actively mediate cultural gaps and evolve with the ongoing communication.</p>
+          <div class="tag-row">
+            <span class="tag">Agent Design</span>
+            <span class="tag">Human-AI Interaction</span>
+            <span class="tag">Cultural Mediation</span>
+          </div>
+        </article>
 
-                <div class="project-card">
-                    <div class="project-header">🌐</div>
-                    <div class="project-content">
-                        <h4>Localization of Online Harm Terms across Diverse Cultures and Languages</h4>
-                        <div class="project-meta">
-                            <span>2025 - Present</span>
-                            <span>Ongoing</span>
-                        </div>
-                        <p class="project-description">Examining how concepts of online harm are interpreted, translated, and adapted across different cultural and linguistic contexts.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Translation</span>
-                            <span class="tech-tag">Localization</span>
-                            <span class="tech-tag">Online Harm</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+      </div>
+    </section>
 
-        <!-- Publications Section -->
-        <section id="publications" class="content-section">
-            <div class="section-header">
-                <h3>Publications</h3>
-                <p class="section-subtitle"><b>Conference Papers and Journals</b></p>
-            </div>
-            
-            <div class="publications-grid">
-                <div class="publication">
-                    <div class="publication-year">2025</div>
-                    <h4>Mapping Community Appeals Systems: Lessons for Community-led Moderation in Multi-Level Governance</h4>
-                    <div class="authors"><mark>&nbspJuhoon Lee&nbsp</mark>, Bich Ngoc (Rubi) Doan, Jonghyun Jee, Joseph Seering</div>
-                    <div class="venue">CSCW 2025</div>
-                    <div class="publication-links">
-                        <a href="https://dl.acm.org/doi/10.1145/3757627" target="_blank">DOI</a>
-                    </div>
-                </div>
+    <!-- Publications -->
+    <section id="publications" class="section reveal">
+      <div class="section-head">
+        <span class="section-index">03</span>
+        <h2>Publications <span class="section-kr">출판</span></h2>
+      </div>
 
-                <div class="publication">
-                    <div class="publication-year">2025</div>
-                    <h4>Less Talk, More Trust: Understanding Players' In-game Assessment of Communication Processes in League of Legends</h4>
-                    <div class="authors"><mark>&nbspJuhoon Lee&nbsp</mark>, Seoyoung Kim, Yeon Su Park, Jeong-Woo Jang, Juho Kim, Joseph Seering</div>
-                    <div class="venue">CHI 2025</div>
-                    <div class="publication-links">
-                        <a href="https://dl.acm.org/doi/10.1145/3706598.3714226" target="_blank">DOI</a>
-                        <a href="#" target="_blank">Video</a>
-                    </div>
-                </div>
+      <h3 class="pub-group-title">Conference Papers &amp; Journals</h3>
+      <ol class="pub-list">
+        <li class="pub">
+          <span class="pub-year">2025</span>
+          <div class="pub-body">
+            <h4>Mapping Community Appeals Systems: Lessons for Community-led Moderation in Multi-Level Governance</h4>
+            <p class="pub-authors"><strong class="me">Juhoon Lee</strong>, Bich Ngoc (Rubi) Doan, Jonghyun Jee, Joseph Seering</p>
+            <p class="pub-venue">CSCW 2025 <a class="pub-link" href="https://dl.acm.org/doi/10.1145/3757627" target="_blank" rel="noopener">DOI ↗</a></p>
+          </div>
+        </li>
+        <li class="pub">
+          <span class="pub-year">2025</span>
+          <div class="pub-body">
+            <h4>Less Talk, More Trust: Understanding Players' In-game Assessment of Communication Processes in League of Legends</h4>
+            <p class="pub-authors"><strong class="me">Juhoon Lee</strong>, Seoyoung Kim, Yeon Su Park, Jeong-Woo Jang, Juho Kim, Joseph Seering</p>
+            <p class="pub-venue">CHI 2025 <a class="pub-link" href="https://dl.acm.org/doi/10.1145/3706598.3714226" target="_blank" rel="noopener">DOI ↗</a></p>
+          </div>
+        </li>
+        <li class="pub">
+          <span class="pub-year">2024</span>
+          <div class="pub-body">
+            <h4>ReSPect: Enabling Active and Scalable Responses to Networked Online Harassment</h4>
+            <p class="pub-authors">Haesoo Kim, <strong class="me">Juhoon Lee</strong>, Jeong-Woo Jang, Juho Kim</p>
+            <p class="pub-venue">CSCW 2024 <a class="pub-link" href="https://dl.acm.org/doi/10.1145/3637394" target="_blank" rel="noopener">DOI ↗</a></p>
+          </div>
+        </li>
+        <li class="pub">
+          <span class="pub-year">2023</span>
+          <div class="pub-body">
+            <h4>Beyond Instructions: A Taxonomy of Information Types in How-to Videos</h4>
+            <p class="pub-authors">Saelyne Yang, Sangkyung Kwak*, <strong class="me">Juhoon Lee*</strong>, Juho Kim</p>
+            <p class="pub-venue">CHI 2023 <a class="pub-link" href="https://dl.acm.org/doi/10.1145/3544548.3581126" target="_blank" rel="noopener">DOI ↗</a></p>
+          </div>
+        </li>
+        <li class="pub">
+          <span class="pub-year">2021</span>
+          <div class="pub-body">
+            <h4>Data-Driven and Personalized Vocabulary Recommendation for English Learners</h4>
+            <p class="pub-authors">Seoyoung Kim, Seokhun Jeong, Seulgi Choi, <strong class="me">Juhoon Lee</strong>, Juho Kim</p>
+            <p class="pub-venue">KSC 2021</p>
+          </div>
+        </li>
+      </ol>
 
-                <div class="publication">
-                    <div class="publication-year">2024</div>
-                    <h4>ReSPect: Enabling Active and Scalable Responses to Networked Online Harassment</h4>
-                    <div class="authors">Haesoo Kim, <mark>&nbspJuhoon Lee&nbsp</mark>, Jeong-Woo Jang, Juho Kim</div>
-                    <div class="venue">CSCW 2024</div>
-                    <div class="publication-links">
-                        <a href="https://dl.acm.org/doi/10.1145/3637394" target="_blank">DOI</a>
-                    </div>
-                </div>
+      <h3 class="pub-group-title">Preprints</h3>
+      <ol class="pub-list">
+        <li class="pub">
+          <span class="pub-year">2025</span>
+          <div class="pub-body">
+            <h4>AssurAI: Experience with Constructing Korean Socio-cultural Datasets to Discover Potential Risks of Generative AI</h4>
+            <p class="pub-authors">Chae-Gyun Lim, Seung-Ho Han, EunYoung Byun, et al. (55 authors, incl. <strong class="me">Juhoon Lee</strong>)</p>
+            <p class="pub-venue">arXiv preprint <a class="pub-link" href="https://arxiv.org/abs/2511.20686" target="_blank" rel="noopener">arXiv ↗</a></p>
+          </div>
+        </li>
+        <li class="pub">
+          <span class="pub-year">2025</span>
+          <div class="pub-body">
+            <h4>CrisisNews: A Dataset Mapping Two Decades of News Articles on Online Problematic Behavior at Scale</h4>
+            <p class="pub-authors">Jeanne Choi, DongJae Kang, Yubin Choi, <strong class="me">Juhoon Lee</strong>, Joseph Seering</p>
+            <p class="pub-venue">arXiv preprint <a class="pub-link" href="https://arxiv.org/abs/2510.12243" target="_blank" rel="noopener">arXiv ↗</a></p>
+          </div>
+        </li>
+      </ol>
 
+      <h3 class="pub-group-title">Posters, Demos &amp; Workshop Papers</h3>
+      <ol class="pub-list">
+        <li class="pub">
+          <span class="pub-year">2026</span>
+          <div class="pub-body">
+            <h4>SLALOM: Simulation Lifecycle Analysis via Longitudinal Observation Metrics for Social Simulation <span class="pub-award">★ Best Paper Nominee</span></h4>
+            <p class="pub-authors"><strong class="me">Juhoon Lee</strong>, Joseph Seering</p>
+            <p class="pub-venue">PoliSim @ CHI 2026: LLM Agent Simulation for Policy Workshop <a class="pub-link" href="https://arxiv.org/abs/2604.11466" target="_blank" rel="noopener">arXiv ↗</a></p>
+          </div>
+        </li>
+        <li class="pub">
+          <span class="pub-year">2023</span>
+          <div class="pub-body">
+            <h4>Look Upon Thyself: Understanding the Effect of Self-Reflection on Toxic Behavior in Online Gaming</h4>
+            <p class="pub-authors"><strong class="me">Juhoon Lee</strong>, Juho Kim, Jeong-Woo Jang</p>
+            <p class="pub-venue">CHI 2023 Workshop on Combating Toxicity, Harassment, and Abuse in Online Social Spaces</p>
+          </div>
+        </li>
+        <li class="pub">
+          <span class="pub-year">2023</span>
+          <div class="pub-body">
+            <h4>Towards an Experience-Centric Paradigm of Online Harassment: Responding to Calling out and Networked Harassment</h4>
+            <p class="pub-authors">Haesoo Kim, <strong class="me">Juhoon Lee</strong>, Juho Kim, Jeong-Woo Jang</p>
+            <p class="pub-venue">CHI 2023 Workshop on Combating Toxicity, Harassment, and Abuse in Online Social Spaces</p>
+          </div>
+        </li>
+      </ol>
+    </section>
 
-                <div class="publication">
-                    <div class="publication-year">2023</div>
-                    <h4>Beyond Instructions: A Taxonomy of Information Types in How-to Videos</h4>
-                    <div class="authors">Saelyne Yang, Sangkyung Kwak*, <mark>&nbspJuhoon Lee*&nbsp</mark>, Juho Kim</div>
-                    <div class="venue">CHI 2023</div>
-                    <div class="publication-links">
-                        <a href="https://dl.acm.org/doi/10.1145/3544548.3581126" target="_blank">DOI</a>
-                        <a href="#" target="_blank">Video</a>
-                    </div>
-                </div>
+  </main>
 
-                <div class="publication">
-                    <div class="publication-year">2021</div>
-                    <h4>Data-Driven and Personalized Vocabulary Recommendation for English Learners</h4>
-                    <div class="authors">Seoyoung Kim, Seokhun Jeong, Seulgi Choi, <mark>&nbspJuhoon Lee&nbsp</mark>, Juho Kim</div>
-                    <div class="venue">KSC 2021</div>
-                    <div class="publication-links">
-                        <a href="#" target="_blank">DOI</a>
-                    </div>
-                </div>
-            </div>
+  <!-- Footer lives in the subtext world -->
+  <footer class="footer">
+    <p class="footer-kicker">the part beneath the words</p>
+    <h2 class="footer-title">Let's Talk</h2>
+    <div class="footer-links">
+      <a href="mailto:juhoonlee@kaist.ac.kr">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7.5 9 6 9-6"/></svg>
+        Email</a>
+      <a href="https://scholar.google.com/citations?user=YmjG9ygAAAAJ&hl=en" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4 2 9.3l10 5.3 10-5.3L12 4z"/><path d="M6.2 11.8V16c0 1.6 2.6 2.9 5.8 2.9s5.8-1.3 5.8-2.9v-4.2"/><path d="M22 9.3v4.5"/></svg>
+        Google Scholar</a>
+      <a href="https://www.linkedin.com/in/juhoon-l-657489100/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        LinkedIn</a>
+      <a href="https://x.com/juhoonjulie" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 2.5h3.68l-8.04 9.2L24 21.5h-7.41l-5.8-7.59-6.64 7.59H.47l8.6-9.83L0 2.5h7.59l5.24 6.93L18.9 2.5zm-1.29 16.8h2.04L6.49 4.59H4.3l13.31 14.71z"/></svg>
+        Twitter</a>
+    </div>
+    <p class="footer-fine">© {{ site.time | date: '%Y' }} Juhoon Lee · Last updated {{ site.time | date: '%b %d, %Y' }}</p>
+  </footer>
 
+  <script>
+    // ---- Subtext lens ----
+    (function () {
+      const hero = document.querySelector('.hero');
+      const sub = document.querySelector('.hero-subtext');
+      const ring = document.querySelector('.lens-ring');
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-            <div class="section-header">
-                <p class="section-subtitle"><b>Posters, Demos, and Workshop Papers</b></p>
-            </div>
-            
+      const maxR = () => Math.min(170, window.innerWidth * 0.2);
+      let x = -400, y = -400, r = 0;          // current
+      let tx = x, ty = y, tr = 0;             // target
+      let pointerActive = false;
+      let lastMove = 0;
+      let start = null;
+      let heroVisible = true;
+      let rafPending = false;
 
-            <div class="publications-grid">
-                <div class="publication">
-                    <div class="publication-year">2023</div>
-                    <h4>Look Upon Thyself: Understanding the Effect of Self-Reflection on Toxic Behavior in Online Gaming</h4>
-                    <div class="authors"><mark>&nbspJuhoon Lee&nbsp</mark>, Juho Kim, Jeong-woo Jang</div>
-                    <div class="venue">CHI2023 Workshop on Combating Toxicity, Harassment, and Abuse in Online Social Spaces</div>
-                    <div class="publication-links">
-                        <a href="#" target="_blank">PDF</a>
-                    </div>
-                </div>
+      new IntersectionObserver(entries => {
+        heroVisible = entries[0].isIntersecting;
+        if (heroVisible && !rafPending) { rafPending = true; requestAnimationFrame(frame); }
+      }).observe(hero);
 
-                <div class="publication">
-                    <div class="publication-year">2023</div>
-                    <h4>Towards an Experience-Centric Paradigm of Online Harassment: Responding to Calling out and Networked Harassment</h4>
-                    <div class="authors">Haesoo Kim, <mark>&nbspJuhoon Lee&nbsp</mark>, Juho Kim, Jeong-woo Jang</div>
-                    <div class="venue">CHI2023 Workshop on Combating Toxicity, Harassment, and Abuse in Online Social Spaces</div>
-                    <div class="publication-links">
-                        <a href="#" target="_blank">PDF</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+      function setTargetFromEvent(clientX, clientY) {
+        const rect = hero.getBoundingClientRect();
+        if (clientY < rect.top || clientY > rect.bottom) { tr = 0; return; }
+        tx = clientX - rect.left;
+        ty = clientY - rect.top;
+        tr = maxR();
+        pointerActive = true;
+        lastMove = performance.now();
+      }
 
-        <!-- Teaching Section -->
-        <!-- <section id="teaching" class="content-section">
-            <div class="section-header">
-                <h3>Teaching & Mentoring</h3>
-            </div>
-            
-            <div class="text-content">
-                <h4>Teaching Assistant</h4>
-                <ul>
-                    <li><strong>CS 6750: Human-Computer Interaction</strong> (Fall 2023, Spring 2024)</li>
-                    <li><strong>CS 3750: User Interface Design</strong> (Fall 2022, Spring 2023)</li>
-                </ul>
+      window.addEventListener('mousemove', e => setTargetFromEvent(e.clientX, e.clientY), { passive: true });
+      window.addEventListener('touchmove', e => {
+        const t = e.touches[0];
+        if (t) setTargetFromEvent(t.clientX, t.clientY);
+      }, { passive: true });
+      hero.addEventListener('mouseleave', () => { tr = 0; });
 
-                <h4>Mentoring</h4>
-                <p>I have mentored 8 undergraduate students in HCI research projects, with 3 pursuing graduate studies in HCI.</p>
+      // Idle drift: a slow wandering lens until (or long after) the pointer takes over
+      function drift(t) {
+        const rect = hero.getBoundingClientRect();
+        const w = rect.width, h = rect.height;
+        tx = w * 0.5 + Math.sin(t / 3400) * w * 0.30;
+        ty = h * 0.52 + Math.cos(t / 2600) * h * 0.26;
+        tr = maxR() * 0.75;
+      }
 
-                <h4>Talks</h4>
-                <ul>
-                    <li>"Accessibility in Design" - UX Design Bootcamp (2024)</li>
-                    <li>"Research Methods in HCI" - Research Symposium (2023)</li>
-                </ul>
-            </div>
-        </section> -->
+      function frame(now) {
+        if (!heroVisible) { rafPending = false; return; }
+        rafPending = true;
+        if (start === null) start = now;
+        const idle = !pointerActive || now - lastMove > 7000;
+        if (idle && !reduceMotion) { pointerActive = false; drift(now - start); }
 
-        <!-- Contact Section -->
-        <!-- <section id="contact" class="content-section">
-            <div class="section-header">
-                <h3>Contact</h3>
-                <p class="section-subtitle">Let's connect and discuss research opportunities</p>
-            </div>
-            
-            <div class="text-content">
-                <p><strong>Office:</strong> Room [Number], [Building], [University]</p>
-                <p><strong>Email:</strong> <a href="mailto:your.email@university.edu" style="color: #84cc16;">your.email@university.edu</a></p>
-                <p><strong>Hours:</strong> Tuesdays/Thursdays, 2-4 PM</p>
-                
-                <h4>Collaboration</h4>
-                <p>I'm interested in projects related to accessibility, human-AI interaction, and inclusive design. Please reach out!</p>
+        const k = reduceMotion ? 1 : 0.1;
+        x += (tx - x) * k;
+        y += (ty - y) * k;
+        r += (tr - r) * (reduceMotion ? 1 : 0.08);
 
-                <h4>Students</h4>
-                <p>Feel free to email about HCI research opportunities or graduate school guidance.</p>
-            </div>
-        </section> -->
-        <!-- <footer>
-            <p>© Copyright 2025 Juhoon Lee. Website created by Juhoon Lee.</p>
-            <p>Last updated: September 19, 2025</p>
-            <p>Questions? Email at <a href="mailto:juhoonlee@kaist.ac.kr">juhoonlee@kaist.ac.kr</a></p>
-        </footer> -->
-    </main>
+        sub.style.clipPath = 'circle(' + r.toFixed(1) + 'px at ' + x.toFixed(1) + 'px ' + y.toFixed(1) + 'px)';
+        const s = Math.max(r / maxR(), 0.001);
+        ring.style.transform = 'translate(' + (x - 200).toFixed(1) + 'px,' + (y - 200).toFixed(1) + 'px) scale(' + s.toFixed(3) + ')';
+        ring.style.opacity = Math.min(1, r / 40).toFixed(2);
 
-    <footer>
-            <div class="footer-links">
-            <!-- <a href="#">About</a> |
-            <a href="#">Services</a> | -->
-            Questions? Contact <a href="mailto:juhoonlee@kaist.ac.kr">juhoonlee@kaist.ac.kr</a>
-            </div>
-            <div>Last Updated: Sep 19, 2025</div>
-            <div>&copy; Copyright 2025 Juhoon Lee. All rights reserved.</div>
-    </footer>
+        requestAnimationFrame(frame);
+      }
+      rafPending = true;
+      requestAnimationFrame(frame);
+    })();
 
-    <script>
-        // Navigation highlighting
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-                this.classList.add('active');
-                const target = document.querySelector(this.getAttribute('href'));
-                target.scrollIntoView({ behavior: 'smooth' });
-            });
+    // ---- Scroll reveal ----
+    (function () {
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
         });
+      }, { threshold: 0.08 });
+      document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    })();
 
-        // Scroll highlighting
-        window.addEventListener('scroll', () => {
-            const sections = document.querySelectorAll('section[id]');
-            const navLinks = document.querySelectorAll('.nav-link');
-            let current = '';
-
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - 100;
-                if (window.scrollY >= sectionTop) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === '#' + current) {
-                    link.classList.add('active');
-                }
-            });
-        });
-
-        // Interactive cursor trail
-        const cursorTrail = document.createElement('div');
-        cursorTrail.className = 'cursor-trail';
-        document.body.appendChild(cursorTrail);
-
-        document.addEventListener('mousemove', (e) => {
-            cursorTrail.style.left = e.clientX - 10 + 'px';
-            cursorTrail.style.top = e.clientY - 10 + 'px';
-            cursorTrail.style.opacity = '1';
-        });
-
-        document.addEventListener('mouseleave', () => {
-            cursorTrail.style.opacity = '0';
-        });
-
-        // Parallax effect for floating elements
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const parallax = document.querySelectorAll('.floating-particle');
-            const speed = 0.5;
-
-            parallax.forEach((element, index) => {
-                const yPos = -(scrolled * speed * (index + 1) * 0.3);
-                element.style.transform = `translateY(${yPos}px)`;
-            });
-        });
-
-        // Skill tag click animation
-        document.querySelectorAll('.skill-tag').forEach(tag => {
-            tag.addEventListener('click', function() {
-                this.style.animation = 'none';
-                setTimeout(() => {
-                    this.style.animation = 'skill-bounce 0.6s ease';
-                }, 10);
-            });
-        });
-
-        // Add skill bounce animation
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes skill-bounce {
-                0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-                40% { transform: translateY(-10px) scale(1.1); }
-                60% { transform: translateY(-5px) scale(1.05); }
-            }
-        `;
-        document.head.appendChild(style);
-    </script>
+    // ---- Nav highlighting ----
+    (function () {
+      const links = document.querySelectorAll('.nav-link[href^="#"]');
+      const sections = [...links].map(l => document.querySelector(l.getAttribute('href'))).filter(Boolean);
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(s => { if (window.scrollY >= s.offsetTop - 140) current = s.id; });
+        links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + current));
+      }, { passive: true });
+    })();
+  </script>
 </body>
 </html>
